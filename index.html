@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Training TR-103 Report — Bhumi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style .css">
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <a href="https://www.gndec.ac.in/" class="logo-link"><img src="logo.png" alt="GNDEC Logo"></a>
+        <a href="#" class="home-button" onclick="showSection('home');return false;">Home</a>
+        <button class="cert-button" onclick="showSection('certificate');return false;">🎓 Certificate</button>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="section active">
+        <p class="eyebrow">Industrial Training Report TR-103</p>
+        <h1>4 Weeks at Techversys Solutions, Mohali</h1>
+        <p class="byline">By Bhumi &nbsp;·&nbsp; URN 2302500 <br>Guru Nanak Dev Engineering College, Ludhiana</p>
+
+        <div class="journey-summary">
+            <div class="journey-stat">
+                <span class="stat-num">21</span>
+                <span class="stat-label">Logged Days</span>
+            </div>
+            <div class="journey-stat">
+                <span class="stat-num">3</span>
+                <span class="stat-label">Learning Phases</span>
+            </div>
+            <div class="journey-stat">
+                <span class="stat-num">1</span>
+                <span class="stat-label">Capstone Project</span>
+            </div>
+        </div>
+
+        <div class="progress-wrap" aria-live="polite">
+            <div class="progress-label">
+                <span>Entries reviewed</span>
+                <span id="progressCount">0 / 21</span>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <div class="jump-row">
+            <label for="daySelect">Jump to an entry</label>
+            <select id="daySelect" onchange="if(this.value){showSection(this.value);} this.value='';">
+                <option value="">Select a day…</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- SPINE / PHASE NAVIGATION -->
+    <nav class="spine" aria-label="Training log navigation">
+
+        <div class="phase phase-python">
+            <div class="phase-head">
+                <span class="phase-index">Phase 01</span>
+                <h3>Python Foundations</h3>
+                <span class="phase-range">Day 1 – 6</span>
+            </div>
+            <div class="chip-row">
+                <a href="#" class="day-chip" data-day="day1" onclick="showSection('day1');return false;">1</a>
+                <a href="#" class="day-chip" data-day="day2" onclick="showSection('day2');return false;">2</a>
+                <a href="#" class="day-chip" data-day="day3" onclick="showSection('day3');return false;">3</a>
+                <a href="#" class="day-chip" data-day="day4" onclick="showSection('day4');return false;">4</a>
+                <a href="#" class="day-chip" data-day="day5" onclick="showSection('day5');return false;">5</a>
+                <a href="#" class="day-chip" data-day="day6" onclick="showSection('day6');return false;">6</a>
+            </div>
+        </div>
+
+        <div class="phase phase-ml">
+            <div class="phase-head">
+                <span class="phase-index">Phase 02</span>
+                <h3>Machine Learning with scikit-learn</h3>
+                <span class="phase-range">Day 7 – 16</span>
+            </div>
+            <div class="chip-row">
+                <a href="#" class="day-chip" data-day="day7" onclick="showSection('day7');return false;">7</a>
+                <a href="#" class="day-chip" data-day="day8" onclick="showSection('day8');return false;">8</a>
+                <a href="#" class="day-chip" data-day="day9" onclick="showSection('day9');return false;">9</a>
+                <a href="#" class="day-chip" data-day="day10" onclick="showSection('day10');return false;">10</a>
+                <a href="#" class="day-chip" data-day="day11" onclick="showSection('day11');return false;">11</a>
+                <a href="#" class="day-chip" data-day="day12" onclick="showSection('day12');return false;">12</a>
+                <a href="#" class="day-chip" data-day="day13" onclick="showSection('day13');return false;">13</a>
+                <a href="#" class="day-chip" data-day="day14" onclick="showSection('day14');return false;">14</a>
+                <a href="#" class="day-chip" data-day="day15" onclick="showSection('day15');return false;">15</a>
+                <a href="#" class="day-chip" data-day="day16" onclick="showSection('day16');return false;">16</a>
+            </div>
+        </div>
+
+        <div class="phase phase-dl">
+            <div class="phase-head">
+                <span class="phase-index">Phase 03</span>
+                <h3>Deep Learning with PyTorch</h3>
+                <span class="phase-range">Day 17 – 21</span>
+            </div>
+            <div class="chip-row">
+                <a href="#" class="day-chip" data-day="day17" onclick="showSection('day17');return false;">17</a>
+                <a href="#" class="day-chip" data-day="day18" onclick="showSection('day18');return false;">18</a>
+                <a href="#" class="day-chip" data-day="day19" onclick="showSection('day19');return false;">19</a>
+                <a href="#" class="day-chip" data-day="day20" onclick="showSection('day20');return false;">20</a>
+                <a href="#" class="day-chip" data-day="day21" onclick="showSection('day21');return false;">21</a>
+            </div>
+        </div>
+
+        <p class="spine-note"><b>Remaining days</b> were spent building the capstone project and revising prior topics.</p>
+    </nav>
+
+    <!-- DAY SECTIONS -->
+    <section id="day1" class="section" data-phase="Python Foundations" data-num="1">
+        <div class="day-head"><span class="day-tag">Day 01 / 21</span><h1>First Steps &amp; Data Types</h1></div>
+        <div class="pdf-container">
+            <iframe src="first-steps-with-python.ipynb - Colab.pdf"></iframe>
+            <iframe src="python-variables-and-data-types.ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day2" class="section" data-phase="Python Foundations" data-num="2">
+        <div class="day-head"><span class="day-tag">Day 02 / 21</span><h1>Branching &amp; Loops</h1></div>
+        <div class="pdf-container">
+            <iframe src="python-branching-and-loops.ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day3" class="section" data-phase="Python Foundations" data-num="3">
+        <div class="day-head"><span class="day-tag">Day 03 / 21</span><h1>Functions &amp; Scope</h1></div>
+        <div class="pdf-container">
+            <iframe src="python-functions-and-scope.ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day4" class="section" data-phase="Python Foundations" data-num="4">
+        <div class="day-head"><span class="day-tag">Day 04 / 21</span><h1>Numerical Computing with NumPy</h1></div>
+        <div class="pdf-container">
+            <iframe src="python-numerical-computing-with-numpy.ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day5" class="section" data-phase="Python Foundations" data-num="5">
+        <div class="day-head"><span class="day-tag">Day 05 / 21</span><h1>Data Visualization with Matplotlib</h1></div>
+        <div class="pdf-container">
+            <iframe src="python-matplotlib-data-visualization.ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day6" class="section" data-phase="Python Foundations" data-num="6">
+        <div class="day-head"><span class="day-tag">Day 06 / 21</span><h1>Data Analysis with Pandas</h1></div>
+        <div class="pdf-container">
+            <iframe src="python-pandas-data-analysis.ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day7" class="section" data-phase="Machine Learning" data-num="7">
+        <div class="day-head"><span class="day-tag">Day 07 / 21</span><h1>Linear Regression with scikit-learn</h1></div>
+        <div class="pdf-container">
+            <iframe src="python-sklearn-linear-regression (1).ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day8" class="section" data-phase="Machine Learning" data-num="8">
+        <div class="day-head"><span class="day-tag">Day 08 / 21</span><h1>Linear Regression, Continued</h1></div>
+        <div class="pdf-container">
+            <iframe src="python-sklearn-linear-regression (1).ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day9" class="section" data-phase="Machine Learning" data-num="9">
+        <div class="day-head"><span class="day-tag">Day 09 / 21</span><h1>Logistic Regression</h1></div>
+        <div class="pdf-container">
+            <iframe src="python-sklearn-logistic-regression (1).ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day10" class="section" data-phase="Machine Learning" data-num="10">
+        <div class="day-head"><span class="day-tag">Day 10 / 21</span><h1>Logistic Regression, Continued</h1></div>
+        <div class="pdf-container">
+            <iframe src="python-sklearn-logistic-regression (1).ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day11" class="section" data-phase="Machine Learning" data-num="11">
+        <div class="day-head"><span class="day-tag">Day 11 / 21</span><h1>Decision Trees &amp; Random Forests</h1></div>
+        <div class="pdf-container">
+            <iframe src="sklearn-decision-trees-random-forests (1).ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day12" class="section" data-phase="Machine Learning" data-num="12">
+        <div class="day-head"><span class="day-tag">Day 12 / 21</span><h1>Decision Trees &amp; Random Forests, Continued</h1></div>
+        <div class="pdf-container">
+            <iframe src="sklearn-decision-trees-random-forests (1).ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day13" class="section" data-phase="Machine Learning" data-num="13">
+        <div class="day-head"><span class="day-tag">Day 13 / 21</span><h1>Gradient Boosting Machines</h1></div>
+        <div class="pdf-container">
+            <iframe src="python-gradient-boosting-machines.ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day14" class="section" data-phase="Machine Learning" data-num="14">
+        <div class="day-head"><span class="day-tag">Day 14 / 21</span><h1>Gradient Boosting Machines, Continued</h1></div>
+        <div class="pdf-container">
+            <iframe src="python-gradient-boosting-machines.ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day15" class="section" data-phase="Machine Learning" data-num="15">
+        <div class="day-head"><span class="day-tag">Day 15 / 21</span><h1>Unsupervised Learning</h1></div>
+        <div class="pdf-container">
+            <iframe src="sklearn-unsupervised-learning.ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day16" class="section" data-phase="Machine Learning" data-num="16">
+        <div class="day-head"><span class="day-tag">Day 16 / 21</span><h1>Unsupervised Learning, Continued</h1></div>
+        <div class="pdf-container">
+            <iframe src="sklearn-unsupervised-learning.ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day17" class="section" data-phase="Deep Learning" data-num="17">
+        <div class="day-head"><span class="day-tag">Day 17 / 21</span><h1>PyTorch Basics</h1></div>
+        <div class="pdf-container">
+            <iframe src="01-pytorch-basics (1).ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day18" class="section" data-phase="Deep Learning" data-num="18">
+        <div class="day-head"><span class="day-tag">Day 18 / 21</span><h1>Linear Regression in PyTorch</h1></div>
+        <div class="pdf-container">
+            <iframe src="02-linear-regression (1).ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day19" class="section" data-phase="Deep Learning" data-num="19">
+        <div class="day-head"><span class="day-tag">Day 19 / 21</span><h1>Logistic Regression in PyTorch</h1></div>
+        <div class="pdf-container">
+            <iframe src="03-logistic-regression (1).ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day20" class="section" data-phase="Deep Learning" data-num="20">
+        <div class="day-head"><span class="day-tag">Day 20 / 21</span><h1>Housing Price Prediction — Minimal Linear Model</h1></div>
+        <div class="pdf-container">
+            <iframe src="housing-linear-minimal.ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button><button onclick="goRelative(1)">Next →</button></div>
+    </section>
+
+    <section id="day21" class="section" data-phase="Deep Learning" data-num="21">
+        <div class="day-head"><span class="day-tag">Day 21 / 21</span><h1>Feedforward Network on CIFAR-10</h1></div>
+        <div class="pdf-container">
+            <iframe src="03-cifar10-feedforward.ipynb - Colab.pdf"></iframe>
+        </div>
+        <div class="day-controls"><button onclick="goRelative(-1)">← Previous</button></div>
+    </section>
+
+    <!-- CERTIFICATE -->
+    <section id="certificate" class="section">
+        <!-- <div class="cert-frame">
+            <p class="cert-eyebrow">Guru Nanak Dev Engineering College, Ludhiana</p>
+            <h2 class="cert-title">Certificate of Completion</h2>
+            <p class="cert-line">This certifies that</p>
+            <p class="cert-name">Bhumi</p>
+            <p class="cert-line">URN 2302500 has successfully completed a 4-week industrial training programme in
+                <strong>Python Programming, Machine Learning &amp; Deep Learning</strong> at</p>
+            <p class="cert-org">Techversys Solutions Pvt. Ltd.</p>
+            <p class="cert-line cert-dates">Duration: <em>[Start Date]</em> – <em>[End Date]</em> · Report Code: TR-103</p>
+            <div class="cert-sign-row">
+                <div class="sign-block"><span class="sign-line"></span><span>Training Coordinator</span></div>
+                <div class="sign-seal">✓</div>
+                <div class="sign-block"><span class="sign-line"></span><span>Head of Department</span></div>
+            </div>
+        </div> -->
+        <div class="button-container no-print">
+            <!-- <button class="github-button" onclick="window.print()">🖨️ Print / Save as PDF</button> -->
+            <button class="github-button" onclick="showSection('certificatePDF')">
+        📄 View Certificate
+            </button>
+
+            <button class="github-button ghost" onclick="showSection('home');">Back to Home</button>
+        </div>
+    </section>
+
+    <section id="certificatePDF" class="section">
+
+    <h2>Training Certificate</h2>
+
+    <iframe
+        src="certificates.pdf"
+        width="100%"
+        height="700px"
+        style="border:none; border-radius:10px;">
+    </iframe>
+
+    <div class="button-container">
+        <button class="github-button" onclick="showSection('certificate')">
+            ← Back
+        </button>
+    </div>
+
+</section>
+
+    <div class="button-container no-print">
+        <button class="github-button"
+        onclick="window.location.href='report.pdf'">
+    📄 View Training Report
+        </button>
+        <!-- <button class="github-button" onclick="window.location.href='https://github.com/MehakSingh123/TR-103.github.io'">Training Report GitHub Repository</button> -->
+        <button class="github-button" onclick="window.location.href='https://github.com/bhumi0529/Stock-Price-Prediction.git'">Training Project GitHub Repository</button>
+    </div>
+
+    <footer class="no-print">
+        <a href="https://www.linkedin.com/in/bhumi-21a1372b9">&copy; Bhumi</a>
+    </footer>
+
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
